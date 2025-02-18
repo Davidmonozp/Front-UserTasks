@@ -1,8 +1,10 @@
 .container {
     width: 100%;
     min-height: 100vh;
-
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .task-list-title {
@@ -11,6 +13,38 @@
     text-align: center;
     margin-bottom: 20px;
     font-weight: bold;
+}
+
+.task-actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: -40px;
+    width: 100%;
+}
+
+.create-task-button {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-task-button:hover {
+    background-color: #218838;
+}
+
+.search-task {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+    margin-right: 120px;
 }
 
 .logout-button {
@@ -35,8 +69,6 @@
     font-size: 18px;
 }
 
-
-
 .btn {
     display: inline-flex;
     justify-content: center;
@@ -49,5 +81,82 @@
 
 td .btn+.btn {
     margin-left: 10px;
-  
+}
+
+@media (max-width: 992px) {
+    .task-actions {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        margin-bottom: -39px;
+        width: 100%;
+    }
+
+    .logout-button {
+        width: 20%;
+    }
+    td .btn+.btn {
+        margin-left: -18px;
+    }
+}
+
+@media (max-width: 778px) {
+
+    .create-task-button {
+        font-size: 13px;
+    }
+
+    .logout-button {
+        width: 25%;
+        font-size: 13px;
+
+    }
+}
+@media (max-width: 498px) {   
+    .search-task {       
+        width: 41%;
+    }    
+    
+}
+@media (max-width: 497px) {   
+    .search-task {       
+        width: 41%;
+    }   
+    .task-actions {       
+        margin-bottom: -52px;
+        height: 38px;
+    } 
+}
+
+@media (max-width: 415px) {
+    .task-actions {       
+        margin-bottom: -37px;
+        height: 38px;
+    } 
+
+    .search-task {
+        font-size: 13px;
+        width: 30%;
+    }
+
+    .create-task-button {
+        width: 30%;
+        font-size: 13px;
+    }
+
+    .logout-button {
+        width: 30%;
+        font-size: 10px;
+    }
+    td .btn+.btn {
+        margin-left: -18px;
+    }
+    
+    @media (max-width: 360px) {
+        .create-task-button {
+            width: 30%;
+            font-size: 11px;
+        }
+    }
+    
 }

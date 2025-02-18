@@ -1,0 +1,62 @@
+
+.btn-guardar {
+    background-color: #21697f;
+    color: white;
+    padding: 7px 1px;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    width: 123px;
+    height: 37px;
+    margin-top: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-guardar:hover {
+    background-color: #10293f;
+}
+
+.btn-guardar:active {
+    background-color: #0a3155;
+}
+
+.btn-guardar:focus {
+    outline: none;
+}
+.btn-back {
+    background-color: #5bc0de;
+    color: white;
+    padding: 4px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: auto;
+    height: 35px;
+    display: flex
+;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back i {
+    font-size: 20px;
+    color: rgb(246, 247, 248);
+}
+
+.btn-back i:hover {
+    font-size: 20px;
+}
+
+.btn-back:hover {
+    background-color: #1b5061;
+}
+
+.btn-back:active {
+    background-color: #2a8f9b;
+}
+
+.btn-back:focus {
+    outline: none;
+}

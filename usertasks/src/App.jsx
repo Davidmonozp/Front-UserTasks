@@ -7,6 +7,7 @@ import './index.css';
 
 function App() {
   return (
+    
     <AuthProvider>
       <TaskProvider>
         <Router>
