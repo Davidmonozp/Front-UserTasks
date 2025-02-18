@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import { createContext, useState, useContext, useEffect } from 'react';
 import axios from 'axios';  
-import { Navigate } from "react-router-dom";
 
 const AuthContext = createContext();
 
@@ -65,7 +64,6 @@ export const AuthProvider = ({ children }) => {
     localStorage.removeItem('role');
     localStorage.removeItem('user_id');
 
-    Navigate('/login');
   };
 
   const contextValue = {

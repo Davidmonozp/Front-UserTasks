@@ -56,7 +56,7 @@ const RegisterForm = () => {
     <section className="register py-5">
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-md-6">
+          <div className="col-lg-12">
             <div className="card p-4 shadow-sm rounded-3">
               <h1 className="text-center mb-4">Crear Cuenta</h1>
               <form onSubmit={formik.handleSubmit}>
